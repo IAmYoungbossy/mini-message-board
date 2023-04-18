@@ -70,3 +70,10 @@ main a {
   border-radius: 0.3125rem;
   padding: 0.625rem 1.25rem;
 }
+
+@media screen and (max-width: 510px) {
+  header > div {
+    column-gap: 1.3rem;
+    justify-content: center;
+  }
+}
