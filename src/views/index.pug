@@ -2,11 +2,10 @@ extends layout
 
 block content
   main 
-    div
+    a(href="/new" class="add-message") Add Message
+    div.card-container
       each message in mssgArr
-        div
-          h2 #{message.text}
-          p #{message.user}
+        div.card
+          h3 #{message.user}
+          p #{message.text}
           p #{message.added}
-          
-    a(href="/new") Add New Message

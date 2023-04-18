@@ -12,6 +12,11 @@ export const mssgArr = [
     user: "Charles",
     added: new Date(),
   },
+  {
+    text: "I'm thinking too much!",
+    user: "Letam Barinua",
+    added: new Date(),
+  },
 ];
 
 /* GET home page. */
