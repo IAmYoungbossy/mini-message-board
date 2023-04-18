@@ -3,7 +3,7 @@ const formRouter = express.Router();
 
 /* GET users listing. */
 formRouter.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+  res.render("form", { title: "Add Message" });
 });
 
 export default formRouter;

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  p Add new message.
+
+  form(method="POST", action="/new")
+    div
+        label(for="name") Name
+        input#name(type="text" required)
+    div
+        label(for="message") message
+        textarea#message(type="text" required)
+    button Post Message
