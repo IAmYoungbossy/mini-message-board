@@ -1,8 +1,15 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 3.125rem;
+  min-height: 100vh;
+  font: 0.875rem "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: blue;
+  display: block;
+  text-decoration: none;
+  max-width: max-content;
+  border: 1px solid blue;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
 }

@@ -6,8 +6,10 @@ block content
   form(method="POST", action="/new")
     div
         label(for="name") Name
-        input#name(type="text" required)
+        input#text(type="text" name="name" required)
     div
         label(for="message") message
-        textarea#message(type="text" required)
+        textarea#message(type="text" name="message" required)
     button Post Message
+    
+  a(href="/") Home 

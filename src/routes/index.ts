@@ -1,7 +1,7 @@
 import express from "express";
 const indexRouter = express.Router();
 
-const mssgArr = [
+export const mssgArr = [
   {
     text: "Hi there!",
     user: "Amando",
