@@ -5,7 +5,9 @@ const formRouter = express.Router();
 
 /* GET user from for adding new message. */
 formRouter.get("/", function (req, res) {
-  res.render("form", { title: "Add Message" });
+  res.render("form", {
+    title: "Mini Message Board | Add Message",
+  });
 });
 
 /* POST user's form inputs. */

@@ -16,7 +16,7 @@ export const mssgArr = [
 
 /* GET home page. */
 indexRouter.get("/", function (req, res, next) {
-  res.render("index", { title: "Express", mssgArr });
+  res.render("index", { title: "Mini Message Board", mssgArr });
 });
 
 export default indexRouter;
