@@ -19,8 +19,12 @@ function minifyFiles(dirPath) {
       // If it's a JavaScript file, read its contents
       const fileContent = fs.readFileSync(filePath, "utf8");
 
-      // Minify the JavaScript code
-      const minifiedOutput = UglifyJS.minify(fileContent);
+      // Minify and shorten variable names in the JavaScript code
+      const minifiedOutput = UglifyJS.minify(fileContent, {
+        mangle: {
+          toplevel: true,
+        },
+      });
 
       // Write the minified code back to the file
       fs.writeFileSync(filePath, minifiedOutput.code, "utf8");
@@ -33,4 +37,6 @@ function minifyFiles(dirPath) {
 // Start minifying files from the /dist folder
 const distFolderPath = path.join(__dirname, "dist"); // Replace with your dist folder path
 minifyFiles(distFolderPath);
-console.log("All JavaScript files minified.");
+console.log(
+  "All JavaScript files minified, variable and function names shortened."
+);
