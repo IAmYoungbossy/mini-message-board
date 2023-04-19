@@ -19,7 +19,7 @@ const MessageSchema = new Schema(
 
 MessageSchema.virtual("date").get(function () {
   return DateTime.fromJSDate(this.createdAt).toLocaleString(
-    DateTime.DATE_MED
+    DateTime.DATETIME_FULL
   );
 });
 
