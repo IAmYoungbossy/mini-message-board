@@ -1,35 +1,14 @@
 import { DateTime } from "luxon";
 import express from "express";
+import { MessageModel } from "../models/message";
 
 const indexRouter = express.Router();
 
-export const mssgArr = [
-  {
-    text: "Hi there!",
-    user: "Amando",
-    added: DateTime.fromJSDate(new Date()).toLocaleString(
-      DateTime.DATE_MED
-    ),
-  },
-  {
-    text: "Hello World!",
-    user: "Charles",
-    added: DateTime.fromJSDate(new Date()).toLocaleString(
-      DateTime.DATE_MED
-    ),
-  },
-  {
-    text: "I'm thinking too much!",
-    user: "Letam Barinua",
-    added: DateTime.fromJSDate(new Date()).toLocaleString(
-      DateTime.DATE_MED
-    ),
-  },
-];
-
 /* GET home page. */
-indexRouter.get("/", function (req, res) {
+indexRouter.get("/", async (req, res) => {
   const title = "Mini Message Board";
+  const mssgArr = await MessageModel.find();
+
   res.render("index", { mssgArr, style: "index", title });
 });
 

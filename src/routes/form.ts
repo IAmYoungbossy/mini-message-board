@@ -1,6 +1,5 @@
 import express from "express";
 import { DateTime } from "luxon";
-import { mssgArr } from "./index";
 
 const formRouter = express.Router();
 
@@ -18,9 +17,6 @@ formRouter.post("/", function (req, res) {
   const added = DateTime.fromJSDate(new Date()).toLocaleString(
     DateTime.DATE_MED
   );
-
-  // Pushes the user input to mssgArr
-  mssgArr.push({ user, text, added });
 
   // Redirects to "/"
   res.redirect("/");

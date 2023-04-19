@@ -57,3 +57,10 @@ main a {
   max-width: 75rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
+
+.no-message {
+  color: #d40027;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: sans-serif;
+}
