@@ -4,6 +4,7 @@ import mongoose, { Document, Schema } from "mongoose";
 interface IMessage {
   text: string;
   user: string;
+  date: string;
 }
 
 interface IMessageModel extends IMessage, Document {}

@@ -1,5 +1,5 @@
 import express from "express";
-import { DateTime } from "luxon";
+import { MessageModel } from "../models/message";
 
 const formRouter = express.Router();
 
@@ -10,13 +10,14 @@ formRouter.get("/", function (req, res) {
 });
 
 /* POST user's form inputs. */
-formRouter.post("/", function (req, res) {
+formRouter.post("/", async (req, res) => {
   // Gets input details
   const user = req.body.name;
   const text = req.body.message;
-  const added = DateTime.fromJSDate(new Date()).toLocaleString(
-    DateTime.DATE_MED
-  );
+  const Post = new MessageModel({ text, user });
+
+  // Saves to MongoDb
+  await Post.save();
 
   // Redirects to "/"
   res.redirect("/");
