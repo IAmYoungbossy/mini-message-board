@@ -2,15 +2,13 @@ extends layout
 
 block content
   main 
-    p Add new message.
+    p Add new message
 
     form(method="POST", action="/new")
       div
-          label(for="name") Name
-          input#text(type="text" name="name" required)
+        label(for="name") Name
+        input#text(type="text" name="name" placeholder="Letam" required)
       div
-          label(for="message") message
-          textarea#message(type="text" name="message" required)
+        label(for="message") Message
+        textarea#message(type="text" name="message" placeholder="What's on your mind" required)
       button Post Message
-      
-    a(href="/") Home 

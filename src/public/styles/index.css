@@ -4,6 +4,7 @@ main a {
   display: block;
   text-decoration: none;
   max-width: max-content;
+  background-color: #fff;
   border: 1px solid blue;
   border-radius: 0.3125rem;
   padding: 0.425rem 1.25rem;
@@ -23,7 +24,8 @@ main a {
   padding: 0.8rem 1.125rem;
   border: 1px solid #dce6eb;
   box-shadow: 4px 5px 10px 0px #00000021;
-  background: linear-gradient(90deg, #39cdcc 1%, #f3fcfc 0);
+  background: linear-gradient(90deg, #39cdcc 1%, #f3fcfc7d 0);
+  background-color: #fff;
 }
 
 .card > p:first-of-type {

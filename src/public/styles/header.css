@@ -8,7 +8,12 @@ header {
 
 header a {
   cursor: pointer;
-  color: midnightblue;
+  color: #0025cd;
+  font-family: sans-serif;
+}
+
+header a:hover {
+  color: red;
 }
 
 header > div {
@@ -37,9 +42,9 @@ h1 {
 nav {
   flex: 1;
   display: flex;
+  max-width: 8.5rem;
+  min-width: 8.5rem;
   align-items: center;
-  max-width: 12.66rem;
-  min-width: 12.66rem;
   justify-content: space-between;
 }
 

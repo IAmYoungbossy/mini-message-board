@@ -8,12 +8,13 @@
 
 body {
   min-height: 100vh;
+  background-color: #eff1f2;
   font: 0.875rem "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 main {
   display: flex;
-  padding: 1.25rem;
   align-items: center;
   flex-direction: column;
+  padding: 2.2rem 1.25rem;
 }
