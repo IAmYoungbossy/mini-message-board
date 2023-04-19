@@ -1,0 +1,57 @@
+/* Main styles */
+main a {
+  color: blue;
+  display: block;
+  text-decoration: none;
+  max-width: max-content;
+  border: 1px solid blue;
+  border-radius: 0.3125rem;
+  padding: 0.425rem 1.25rem;
+}
+
+.add-message {
+  font-weight: 600;
+  color: #3d2db1cf;
+  margin-bottom: 1.25rem;
+  border-color: #5cbbba;
+  box-shadow: 4px 4px 6px #0000003b;
+}
+
+.card {
+  max-width: 30rem;
+  border-radius: 0.25rem;
+  padding: 0.8rem 1.125rem;
+  border: 1px solid #dce6eb;
+  box-shadow: 4px 5px 10px 0px #00000021;
+  background: linear-gradient(90deg, #39cdcc 1%, #f3fcfc 0);
+}
+
+.card > p:first-of-type {
+  margin: 0.5rem 0;
+  padding: 0.2rem 0;
+  border-radius: 0.2rem;
+  background-color: #0097ff12;
+  box-shadow: 1px 1px 1px #0097ff47;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+}
+
+.card > p:last-of-type {
+  color: #6900cb;
+  font-family: sans-serif;
+  text-shadow: 3px 3px 6px #6900cb70;
+}
+
+.card > h3 {
+  color: #2e1daacf;
+  font-family: sans-serif;
+  text-shadow: 3px 3px 6px #6900cb70;
+}
+
+.card-container {
+  gap: 1rem;
+  width: 100%;
+  display: grid;
+  max-width: 75rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
