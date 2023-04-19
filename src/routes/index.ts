@@ -1,21 +1,29 @@
+import { DateTime } from "luxon";
 import express from "express";
+
 const indexRouter = express.Router();
 
 export const mssgArr = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date(),
+    added: DateTime.fromJSDate(new Date()).toLocaleString(
+      DateTime.DATE_MED
+    ),
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date(),
+    added: DateTime.fromJSDate(new Date()).toLocaleString(
+      DateTime.DATE_MED
+    ),
   },
   {
     text: "I'm thinking too much!",
     user: "Letam Barinua",
-    added: new Date(),
+    added: DateTime.fromJSDate(new Date()).toLocaleString(
+      DateTime.DATE_MED
+    ),
   },
 ];
 
