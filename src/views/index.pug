@@ -6,6 +6,9 @@ block content
     div.card-container
       each message in mssgArr
         div.card
+          div.image-container
+            img(src="images/edit-icon.jpg" alt="Edit Icon")
+            img(src="images/delete-icon.png" alt="Delete Icon")
           h3 #{message.user}
           p #{message.text}
           p #{message.date}
