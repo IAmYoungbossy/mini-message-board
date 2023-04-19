@@ -4,6 +4,7 @@
 import http from "http";
 import app from "../app";
 import debug from "debug";
+import conectToDb from "../connectToDb/connectToDb";
 
 const debugInstance = debug("src:server");
 
@@ -14,10 +15,13 @@ app.set("port", port);
 // Create HTTP server.
 var server = http.createServer(app);
 
-// Listen on provided port, on all network interfaces.
-server.on("error", onError);
-server.on("listening", onListening);
-server.listen(port, () => console.log("Listening for request"));
+/********************************************************************
+ ** Waits for database to connect, if seccussful, listens for request
+ ** or logs an error if there is a problem **************************
+ ********************************************************************/
+conectToDb({ port, server, onError, onListening }).catch((err) =>
+  console.log(err)
+);
 
 // Normalize a port into a number, string, or false.
 function normalizePort(val: string) {
