@@ -6,6 +6,7 @@ export interface IMessage {
   text: string;
   user: string;
   date: string;
+  updated: string;
 }
 
 interface IMessageModel extends IMessage, Document {}
@@ -26,6 +27,12 @@ MessageSchema.virtual("date").get(function () {
 
 MessageSchema.virtual("ID").get(function () {
   return this._id;
+});
+
+MessageSchema.virtual("updated").get(function () {
+  return DateTime.fromJSDate(this.updatedAt).toLocaleString(
+    DateTime.DATETIME_FULL
+  );
 });
 
 export const MessageModel = mongoose.model<IMessageModel>(

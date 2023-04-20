@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  main 
+    div 
+      div 
+        h3.user #{user}
+        p
+          em Created: #{date}
+      div.image-container
+        div.manipulate-post 
+          a(href=`/edit/${id}`)
+            img(src="/images/edit-icon.jpg" alt="Edit Icon")
+          a(href=`/delete/${id}`)
+            img(src="/images/delete-icon.png" alt="Delete Icon")
+        p 
+          em Updated: #{updated}
+    h4 Message 
+    p.text-body #{text}

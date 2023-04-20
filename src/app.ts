@@ -9,6 +9,7 @@ import formRouter from "./routes/form";
 import editRouter from "./routes/edit";
 import indexRouter from "./routes/index";
 import deleteRouter from "./routes/delete";
+import detailsRouter from "./routes/details";
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use("/", indexRouter);
 app.use("/new", formRouter);
 app.use("/edit", editRouter);
 app.use("/delete", deleteRouter);
+app.use("/details", detailsRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

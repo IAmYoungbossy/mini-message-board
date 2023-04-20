@@ -29,7 +29,7 @@ main > a {
   background-color: #fff;
 }
 
-.card > p:first-of-type {
+.card > a:nth-of-type(2) > p {
   margin: 0.5rem 0;
   padding: 0.2rem 0;
   border-radius: 0.2rem;
@@ -39,13 +39,18 @@ main > a {
     "Trebuchet MS", sans-serif;
 }
 
-.card > p:last-of-type {
+.card > a:nth-of-type(3) > p {
   color: #6900cb;
   font-family: sans-serif;
   text-shadow: 3px 3px 6px #6900cb70;
 }
 
-.card > h3 {
+.card > a {
+  all: unset;
+  cursor: pointer;
+}
+
+.card > a:nth-child(2) > h3 {
   color: #2e1daacf;
   font-family: sans-serif;
   text-shadow: 3px 3px 6px #6900cb70;
