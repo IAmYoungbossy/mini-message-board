@@ -1,5 +1,5 @@
 /* Main styles */
-main a {
+main > a {
   color: blue;
   display: block;
   text-decoration: none;
@@ -75,9 +75,9 @@ main a {
   max-width: max-content;
 }
 
-.image-container > img:first-child {
+.image-container > a > img:first-child {
   width: 1.1rem;
 }
-.image-container > img:last-child {
+.image-container > a > img:last-child {
   width: 1rem;
 }

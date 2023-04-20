@@ -4,8 +4,9 @@ import createError from "http-errors";
 import cookieParser from "cookie-parser";
 import express, { ErrorRequestHandler } from "express";
 
-import indexRouter from "./routes/index";
 import formRouter from "./routes/form";
+import indexRouter from "./routes/index";
+import deleteRouter from "./routes/delete";
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.resolve("src", "public")));
 
 app.use("/", indexRouter);
 app.use("/new", formRouter);
+app.use("/delete", deleteRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
