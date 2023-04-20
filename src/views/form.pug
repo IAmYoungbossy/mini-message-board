@@ -4,11 +4,24 @@ block content
   main 
     p Add new message
 
-    form(method="POST", action="/new")
+    form(
+      action=(id) ? `/edit/${id}/updated?_method=PUT` : "/new",
+      method='POST'
+    )
       div
         label(for="name") Name
-        input#text(type="text" name="name" placeholder="Letam" required)
+        input#text(
+          required 
+          type="text" 
+          value=user || ''
+          name="name" placeholder="Letam" 
+        )
       div
         label(for="message") Message
-        textarea#message(type="text" name="message" placeholder="What's on your mind" required)
-      button Post Message
+        textarea#message(
+          required
+          type="text" 
+          name="message" 
+          placeholder="What's on your mind" 
+        ) #{text || ''}
+      button(id="post-message-button" data-id=id) Post Message

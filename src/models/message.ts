@@ -1,7 +1,7 @@
 import { DateTime } from "luxon";
 import mongoose, { Document, Schema } from "mongoose";
 
-interface IMessage {
+export interface IMessage {
   ID: string;
   text: string;
   user: string;
