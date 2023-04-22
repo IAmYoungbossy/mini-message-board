@@ -30,9 +30,13 @@ main > a {
 }
 
 .card > a:nth-of-type(2) > p {
+  width: 100%;
   margin: 0.5rem 0;
+  overflow: hidden;
   padding: 0.2rem 0;
+  white-space: nowrap;
   border-radius: 0.2rem;
+  text-overflow: ellipsis;
   background-color: #0097ff12;
   box-shadow: 1px 1px 1px #0097ff47;
   font-family: "Gill Sans", "Gill Sans MT", Calibri,
