@@ -1,20 +1,16 @@
 # Mini Message Board
 
-## Introduction
-
-The Mini Message Board project is a full-stack web application that allows users to perform CRUD operations on messages posted on a message board. The project demonstrates the use of NodeJS, ExpressJS, MongoDB, and Pug templating language. TypeScript is also used to provide a statically typed and structured codebase, enhancing the project's maintainability and scalability.
-
 #### Index Page
 
 ![homepage](screenshots/index-page.png)
 
+## Introduction
+
+The Mini Message Board project is a full-stack web application that allows users to perform CRUD operations on messages posted on a message board. The project demonstrates the use of NodeJS, ExpressJS, MongoDB, and Pug templating language. TypeScript is also used to provide a statically typed and structured codebase, enhancing the project's maintainability and scalability.
+
 #### Details Page
 
 ![details page](screenshots/details-page.png)
-
-#### Create Page
-
-![create page](screenshots/create-page.png)
 
 ## Learning Objectives
 
@@ -29,6 +25,10 @@ Throughout the development of this project, several learning objectives were ach
 - CRUD Operations: I learned how to perform CRUD operations using Mongoose to create schemas, models and interact with MongoDB, allowing for the efficient management of messages on the message board.
 
 - Schemas And Models: I learned how to create models using TypeScript and handle date formatting with the Luxon library, making the code more organized and easy to maintain. Also leanred how to create virtual properties from existing properties in schema.
+
+#### Create Page
+
+![create page](screenshots/create-page.png)
 
 ## Installation Instructions
 
