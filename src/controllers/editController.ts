@@ -18,10 +18,14 @@ export async function editControllerPut(
   const user = req.body.name;
   const text = req.body.message;
 
-  // Gets referrence to data in database
-  await MessageModel.findByIdAndUpdate(id, { user, text });
+  try {
+    // Gets referrence to data in database
+    await MessageModel.findByIdAndUpdate(id, { user, text });
 
-  res.redirect("/");
+    res.redirect("/");
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default editControllerGet;

@@ -12,8 +12,12 @@ async function formControllerPost(req: Request, res: Response) {
   const text = req.body.message;
   const Post = new MessageModel({ text, user });
 
-  await Post.save();
-  res.redirect("/");
+  try {
+    await Post.save();
+    res.redirect("/");
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default formControllerPost;

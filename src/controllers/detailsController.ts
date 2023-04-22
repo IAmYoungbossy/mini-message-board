@@ -3,19 +3,24 @@ import { IMessage, MessageModel } from "../models/message";
 
 async function detailsController(req: Request, res: Response) {
   const { id } = req.params;
-  const post = await MessageModel.findById(id);
   const title = "Mini Message Board | Details";
-  const { text, user, date, updated } = post as IMessage;
 
-  res.render("details", {
-    id,
-    date,
-    user,
-    text,
-    title,
-    updated,
-    style: "details",
-  });
+  try {
+    const post = await MessageModel.findById(id);
+    const { text, user, date, updated } = post as IMessage;
+
+    res.render("details", {
+      id,
+      date,
+      user,
+      text,
+      title,
+      updated,
+      style: "details",
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default detailsController;
