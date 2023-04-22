@@ -4,6 +4,18 @@
 
 The Mini Message Board project is a full-stack web application that allows users to perform CRUD operations on messages posted on a message board. The project demonstrates the use of NodeJS, ExpressJS, MongoDB, and Pug templating language. TypeScript is also used to provide a statically typed and structured codebase, enhancing the project's maintainability and scalability.
 
+#### Index Page
+
+![homepage](screenshots/index-page.png)
+
+#### Details Page
+
+![details page](screenshots/details-page.png)
+
+#### Create Page
+
+![create page](screenshots/create-page.png)
+
 ## Learning Objectives
 
 Throughout the development of this project, several learning objectives were achieved, including:
