@@ -1,6 +1,6 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  main
+    div 
+      h2 404 Page Not Found #[a(href="/") | #[small Go Home]]
