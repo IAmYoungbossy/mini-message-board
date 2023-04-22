@@ -8,25 +8,15 @@ The Mini Message Board project is a full-stack web application that allows users
 
 Throughout the development of this project, several learning objectives were achieved, including:
 
-### Dynamic Routing
+- - Dynamic Routing: I learned how to create dynamic routing using route parameters, making it possible to handle different requests and display the appropriate responses.
 
-I learned how to create dynamic routing using route parameters, making it possible to handle different requests and display the appropriate responses.
+- - Serving Static Files: I learned how to serve static CSS files and images dynamically to different view engines, providing a more user-friendly interface.
 
-### Serving Static Files
+- - MVC Pattern: I structured the project using the MVC pattern, separating concerns into different modules to make the code easier to read, understand, and maintain.
 
-I learned how to serve static CSS files and images dynamically to different view engines, providing a more user-friendly interface.
+- - CRUD Operations: I learned how to perform CRUD operations using Mongoose to create schemas, models and interact with MongoDB, allowing for the efficient management of messages on the message board.
 
-### MVC Pattern
-
-I structured the project using the MVC pattern, separating concerns into different modules to make the code easier to read, understand, and maintain.
-
-### CRUD Operations
-
-I learned how to perform CRUD operations using Mongoose to create schemas, models and interact with MongoDB, allowing for the efficient management of messages on the message board.
-
-### Schemas And Models
-
-I learned how to create models using TypeScript and handle date formatting with the Luxon library, making the code more organized and easy to maintain. Also leanred how to create virtual properties from existing properties in schema.
+- - Schemas And Models: I learned how to create models using TypeScript and handle date formatting with the Luxon library, making the code more organized and easy to maintain. Also leanred how to create virtual properties from existing properties in schema.
 
 ## Installation Instructions
 
