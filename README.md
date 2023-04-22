@@ -2,7 +2,7 @@
 
 #### Index Page
 
-![homepage](screenshots/index-page.png)
+![homepage](screenshots/index.png)
 
 ## Introduction
 
@@ -10,7 +10,7 @@ The Mini Message Board project is a full-stack web application that allows users
 
 #### Details Page
 
-![details page](screenshots/details-page.png)
+![details page](screenshots/details.png)
 
 ## Learning Objectives
 
@@ -28,7 +28,7 @@ Throughout the development of this project, several learning objectives were ach
 
 #### Create Page
 
-![create page](screenshots/create-page.png)
+![create page](screenshots/create.png)
 
 ## Installation Instructions
 
